@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask Off Club | Покер, Мафия, Бункер</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Main Content -->
+    <div id="mainContent">
+        <!-- Navigation -->
+        <nav>
+            <div class="container nav-container">
+                <a href="#" class="nav-logo">
+                    <img src="C:\Users\Yakogami\Downloads\122edc2f-9242-4d16-880d-6ea9970409aa.png" alt="Logo" class="nav-logo-icon">
+                    Mask Off
+                </a>
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="#games">Игры</a></li>
+                    <li class="nav-link"><a href="#events">Мероприятия</a></li>
+                    <li class="nav-link"><a href="#rating">Рейтинг</a></li>
+                    <li class="nav-link"><a href="#about">О клубе</a></li>
+                    <li class="nav-link" id="profileNavItem" style="display: none;"><a href="#" id="profileLink">Профиль</a></li>
+                </ul>
+                <a href="#" class="nav-cta" id="authLink">Войти</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <h1>Mask Off</h1>
+            <h2>Открытый клуб для ценителей интеллектуальных игр. Покер, Мафия, Бункер и другие игры в атмосфере живого общения.</h2>
+            <div class="hero-links">
+                <a href="#games" class="hero-link">
+                    Во что мы играем
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6H11" stroke="#0071E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 1L11 6L6 11" stroke="#0071E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#events" class="hero-link">
+                    Ближайшие игры
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6H11" stroke="#0071E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 1L11 6L6 11" stroke="#0071E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <div class="gallery-container" id="galleryContainer">
+                <div class="gallery-slide" style="background-image: url('https://www.casinoz7.biz/storage/userfiles/yaminya/blogs/dNznh96tyfIM35PGhUS3iI9ebBfbAxNKjQWdAMtO.jpg');">
+                    <div class="gallery-content">
+                        <h2 class="gallery-title">Покерные вечера</h2>
+                        <p class="gallery-description">Стратегия, психология и настоящее удовольствие от игры</p>
+                    </div>
+                </div>
+                <div class="gallery-slide" style="background-image: url('https://sun9-60.userapi.com/impg/bxGe6uO-aH7_yXIaY66MDjhvERbqqxbPCEkNvg/OCnRGQE8ty4.jpg?size=1280x701&quality=95&sign=660fbbc12a4777e3c5a446f1cce39c14&type=album');">
+                    <div class="gallery-content">
+                        <h2 class="gallery-title">Мафия</h2>
+                        <p class="gallery-description">Психологические баталии и детективные сюжеты</p>
+                    </div>
+                </div>
+                <div class="gallery-slide" style="background-image: url('https://sun9-70.userapi.com/s/v1/if2/aJXt9qmMiIaaEddKLas7S1Y61wSyQMEGau6_-oy0sCMjwueD3UDt83kdHrSjs48kaKwRgwAnq4K2fyApg-L1Kidx.jpg?quality=95&as=32x21,48x32,72x48,108x72,160x107,240x160,360x240,480x320,540x360,640x427,720x480,1080x720,1200x800&from=bu&u=b-HempaH3G7UqIvjCamLyzsHbVdD8pl8X72kSkxFxEo&cs=1200x800');">
+                    <div class="gallery-content">
+                        <h2 class="gallery-title">Бункер</h2>
+                        <p class="gallery-description">Убеди других, что именно ты достоин места в убежище</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-pagination" id="galleryPagination">
+                <div class="pagination-dot active" data-index="0"></div>
+                <div class="pagination-dot" data-index="1"></div>
+                <div class="pagination-dot" data-index="2"></div>
+            </div>
+        </section>
+
+        <!-- Games Section -->
+        <section class="section" id="games">
+            <div class="container">
+                <h2 class="section-title">Наши игры</h2>
+                <div class="games-grid">
+                    <div class="game-card">
+                        <div class="game-image" style="background-image: url('https://repository-images.githubusercontent.com/400129878/9f6c4285-b945-4747-a81f-92ca3ed29389');"></div>
+                        <div class="game-content">
+                            <h3 class="game-title">Покер</h3>
+                            <p class="game-description">Техасский холдем без ставок на деньги. Играем ради стратегии, психологии и удовольствия от игры.</p>
+                            <a href="#events" class="game-link">
+                                Ближайшие игры
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6H11" stroke="#0071E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 1L11 6L6 11" stroke="#0071E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image" style="background-image: url('https://cdn.culture.ru/images/89a4574f-3129-56f2-90dc-5d28bfc90659');"></div>
+                        <div class="game-content">
+                            <h3 class="game-title">Мафия</h3>
+                            <p class="game-description">Классическая психологическая игра с детективным сюжетом. Развиваем навыки общения и убеждения.</p>
+                            <a href="#events" class="game-link">
+                                Ближайшие игры
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6H11" stroke="#0071E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 1L11 6L6 11" stroke="#0071E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image" style="background-image: url('https://frankfurt.apollo.olxcdn.com/v1/files/tkqw6t3xwf6n2-KZ/image');"></div>
+                        <div class="game-content">
+                            <h3 class="game-title">Бункер</h3>
+                            <p class="game-description">Постапокалиптическая игра на выживание. Убеждайте других, что именно вы достойны места в бункере.</p>
+                            <a href="#events" class="game-link">
+                                Ближайшие игры
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 6H11" stroke="#0071E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 1L11 6L6 11" stroke="#0071E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section class="section events" id="events">
+            <div class="container">
+                <h2 class="section-title">Ближайшие мероприятия</h2>
+                <div class="events-grid">
+
+                    <div class="event-card">
+                        <div class="event-date">15 июня, 19:00</div>
+                        <div class="event-master">
+                            <div class="master-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg')"></div>
+                            <div class="master-info">
+                                <h4>Алексей</h4>
+                                <p>Профессиональный покерист, проводит игры с 2020 года</p>
+                            </div>
+                        </div>
+                        <h3 class="event-title">Текасский холдем</h3>
+                        <p class="event-details">Приходите играть в техасский холдем. Рады как новичкам, так и опытным игрокам!</p>
+                        <button class="btn register-btn" data-event="Открытый покерный вечер">Записаться</button>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-date">16 июня, 18:00</div>
+                        <div class="event-master">
+                            <div class="master-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/95.jpg')"></div>
+                            <div class="master-info">
+                                <h4>Ирина</h4>
+                                <p>Точно знает, как проводить игры в мафию. Играет с 2021 года</p>
+                            </div>
+                        </div>
+                        <h3 class="event-title">Мафия</h3>
+                        <p class="event-details">Какое-то описание...</p>
+                        <button class="btn register-btn" data-event="Открытый покерный вечер">Записаться</button>
+                    </div>
+
+                    <div class="event-card">
+                        <div class="event-date">19 июня, 18:30</div>
+                        <div class="event-master">
+                            <div class="master-avatar" style="background-image: url('https://static.wikia.nocookie.net/0a0ec371-29c2-41ce-82b8-45f4fb8c49a3/scale-to-width/755')"></div>
+                            <div class="master-info">
+                                <h4>Леха Албанец</h4>
+                                <p>Пропал в 2019, при себе имел 50 рублей, откликается на прозвище албанец</p>
+                            </div>
+                        </div>
+                        <h3 class="event-title">Бункер</h3>
+                        <p class="event-details">Помогите найти Леху...</p>
+                        <button class="btn register-btn" data-event="Открытый покерный вечер">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rating Section -->
+        <section class="section rating" id="rating">
+            <div class="container">
+                <h2 class="section-title">Рейтинг игроков</h2>
+                <p style="text-align: center; margin-bottom: 30px; color: var(--gray);">Текущий сезон: лето 2025</p>
+
+                <div class="rating-tabs">
+                    <button class="rating-tab active" data-tab="poker">Покер</button>
+                    <button class="rating-tab" data-tab="mafia">Мафия</button>
+                </div>
+
+                <div class="rating-content active" id="poker-rating">
+                    <table class="rating-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Игрок</th>
+                                <th>Очки</th>
+                                <th>Игр</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="rating-number">1</td>
+                                <td><a href="#" class="player-link" data-player="Мирамистин">Мирамистин</a></td>
+                                <td>1245</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <td class="rating-number">2</td>
+                                <td><a href="#" class="player-link" data-player="Блеф">Блеф</a></td>
+                                <td>1180</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td class="rating-number">3</td>
+                                <td><a href="#" class="player-link" data-player="Фуллхаус">Фуллхаус</a></td>
+                                <td>1123</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td class="rating-number">4</td>
+                                <td><a href="#" class="player-link" data-player="Чип">Чип</a></td>
+                                <td>1056</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td class="rating-number">5</td>
+                                <td><a href="#" class="player-link" data-player="Ривер">Ривер</a></td>
+                                <td>987</td>
+                                <td>22</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="rating-content" id="mafia-rating">
+                    <table class="rating-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Игрок</th>
+                                <th>Очки</th>
+                                <th>Игр</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="rating-number">1</td>
+                                <td><a href="#" class="player-link" data-player="Мафиозник">Мафиозник</a></td>
+                                <td>1345</td>
+                                <td>35</td>
+                            </tr>
+                            <tr>
+                                <td class="rating-number">2</td>
+                                <td><a href="#" class="player-link" data-player="Шериф">Шериф</a></td>
+                                <td>1280</td>
+                                <td>38</td>
+                            </tr>
+                            <tr>
+                                <td class="rating-number">3</td>
+                                <td><a href="#" class="player-link" data-player="Доктор">Доктор</a></td>
+                                <td>1223</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td class="rating-number">4</td>
+                                <td><a href="#" class="player-link" data-player="Комиссар">Комиссар</a></td>
+                                <td>1156</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td class="rating-number">5</td>
+                                <td><a href="#" class="player-link" data-player="Алиби">Алиби</a></td>
+                                <td>1087</td>
+                                <td>25</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container">
+                <h2 class="section-title">О клубе</h2>
+                <div class="about-content">
+                    <p class="about-text">
+                        Mask Off - это открытое сообщество любителей интеллектуальных игр. Мы не требуем регистрации и членских взносов - просто приходите и играйте!
+                    </p>
+                    <p class="about-text">
+                        Наш клуб создан для тех, кто ценит живое общение, новые знакомства и атмосферу дружеского соперничества. Мы топим за честную игру и уважение к другим игрокам.
+                    </p>
+                    <p class="about-text">
+                        По итогам каждого сезона мы проводим турниры с крутыми призами для лучших игроков. Рейтинговая система учитывает ваши результаты во всех играх клуба.
+                    </p>
+                    <a href="#events" class="btn">Присоединиться к следующей игре</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2 class="section-title">Отзывы игроков</h2>
+                <div class="reviews-slider">
+                    <div class="review-card active">
+                        <div class="review-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg')"></div>
+                        <p class="review-text">"Отличный клуб с дружеской атмосферой! Особенно нравятся покерные вечера - всегда интересные соперники и хороший уровень игры."</p>
+                        <div class="review-author">Алексей "Блеф"</div>
+                        <div class="review-game">Играет в покер с 2023</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/44.jpg')"></div>
+                        <p class="review-text">"Лучшее место для любителей мафии! Ведущие профессиональные, игроки адекватные, всегда интересные роли и сценарии."</p>
+                        <div class="review-author">Мария "Шериф"</div>
+                        <div class="review-game">Играет в мафию с 2022</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/75.jpg')"></div>
+                        <p class="review-text">"Бункер в этом клубе - это нечто! Каждый раз новые интересные персонажи и неожиданные повороты. Рекомендую всем!"</p>
+                        <div class="review-author">Дмитрий "Док"</div>
+                        <div class="review-game">Играет в бункер с 2024</div>
+                    </div>
+                    <div class="reviews-nav">
+                        <div class="review-dot active" data-index="0"></div>
+                        <div class="review-dot" data-index="1"></div>
+                        <div class="review-dot" data-index="2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>Mask Off</h3>
+                        <ul class="footer-links">
+                            <li class="footer-link"><a href="#about">О клубе</a></li>
+                            <li class="footer-link"><a href="#games">Игры</a></li>
+                            <li class="footer-link"><a href="#rating">Рейтинг</a></li>
+                            <li class="footer-link"><a href="#events">Мероприятия</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Контакты</h3>
+                        <ul class="footer-links">
+                            <li class="footer-link"><a href="https://t.me/maskoffclub" target="_blank">Telegram-канал</a></li>
+                            <li class="footer-link"><a href="https://vk.com/maskoffclub" target="_blank">Группа ВК</a></li>
+                            <li class="footer-link"><a href="mailto:hello@maskoff.club">hello@maskoff.club</a></li>
+                            <li class="footer-link"><a href="tel:+79991234567">+7 999 123-45-67</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Правила</h3>
+                        <ul class="footer-links">
+                            <li class="footer-link"><a href="#">Кодекс игрока</a></li>
+                            <li class="footer-link"><a href="#">Рейтинговая система</a></li>
+                            <li class="footer-link"><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2025 Mask Off Club. Все права защищены.</p>
+                    <p>Играйте честно, уважайте соперников, получайте удовольствие!</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Profile Page (Hidden by default) -->
+    <div id="profilePage" style="display: none;">
+        <!-- Navigation for Profile -->
+        <nav>
+            <div class="container nav-container">
+                <a href="#" class="back-button" id="backButton">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 6H1" stroke="#0071E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 11L1 6L6 1" stroke="#0071E3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Назад
+                </a>
+                <div class="nav-logo">Профиль игрока</div>
+                <div style="width: 100px;"></div> <!-- Spacer for alignment -->
+            </div>
+        </nav>
+
+        <!-- Profile Content -->
+        <section class="profile-section">
+            <div class="container">
+                <div class="profile-header">
+                    <div class="profile-avatar" id="profileAvatar">MK</div>
+                    <div class="profile-info">
+                        <h2 id="profileName">MaskedKing</h2>
+                        <p id="profileSince">Участник клуба с июня 2024</p>
+                    </div>
+                </div>
+
+                <div class="profile-tabs">
+                    <button class="profile-tab active" data-tab="stats">Статистика</button>
+                    <button class="profile-tab" data-tab="history">История игр</button>
+                    <button class="profile-tab" data-tab="awards">Награды</button>
+                </div>
+
+                <div class="profile-content active" id="statsContent">
+                    <h3>Статистика по играм</h3>
+                    <div class="game-stats">
+                        <div class="game-stat">
+                            <div class="game-stat-value">12</div>
+                            <div class="game-stat-label">Игр в покер</div>
+                        </div>
+                        <div class="game-stat">
+                            <div class="game-stat-value">8</div>
+                            <div class="game-stat-label">Игр в мафию</div>
+                        </div>
+                        <div class="game-stat">
+                            <div class="game-stat-value">4</div>
+                            <div class="game-stat-label">Игр в бункер</div>
+                        </div>
+                        <div class="game-stat">
+                            <div class="game-stat-value">1,245</div>
+                            <div class="game-stat-label">Очков в покере</div>
+                        </div>
+                        <div class="game-stat">
+                            <div class="game-stat-value">980</div>
+                            <div class="game-stat-label">Очков в мафии</div>
+                        </div>
+                        <div class="game-stat">
+                            <div class="game-stat-value high">72%</div>
+                            <div class="game-stat-label">Винрейт в мафии</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-content" id="historyContent">
+                    <h3>Последние игры</h3>
+                    <div class="games-history" id="gamesHistory">
+                        <!-- Games will be inserted here by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="profile-content" id="awardsContent">
+                    <h3>Награды и достижения</h3>
+                    <div class="awards-grid">
+                        <div class="award-card">
+                            <div class="award-icon gold">🏆</div>
+                            <div class="award-title">1 место в покере</div>
+                            <div class="award-date">Весенний сезон 2025</div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-icon silver">🥈</div>
+                            <div class="award-title">2 место в мафии</div>
+                            <div class="award-date">Зимний сезон 2024</div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-icon bronze">🥉</div>
+                            <div class="award-title">3 место в бункере</div>
+                            <div class="award-date">Осенний сезон 2024</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Modals (Registration, Auth, Profile) -->
+    <div class="modal" id="registrationModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-title">Запись на игру</h3>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="nickname" class="form-label">Ваш никнейм</label>
+                    <input type="text" id="nickname" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="telegram" class="form-label">Телеграм (@username)</label>
+                    <input type="text" id="telegram" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="game" class="form-label">Игра</label>
+                    <select id="game" class="form-select" required>
+                        <option value="">Выберите игру</option>
+                        <option value="Покер">Покер</option>
+                        <option value="Мафия">Мафия</option>
+                        <option value="Бункер">Бункер</option>
+                    </select>
+                </div>
+                <input type="hidden" id="eventName">
+                <button type="submit" class="btn">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="authModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-title">Вход / Регистрация</h3>
+
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Вход</button>
+                <button class="auth-tab" data-tab="register">Регистрация</button>
+            </div>
+
+            <div class="auth-content active" id="loginContent">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail" class="form-label">Email</label>
+                        <input type="email" id="loginEmail" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword" class="form-label">Пароль</label>
+                        <input type="password" id="loginPassword" class="form-input" required>
+                    </div>
+                    <button type="submit" class="btn">Войти</button>
+                </form>
+            </div>
+
+            <div class="auth-content" id="registerContent">
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="regNickname" class="form-label">Никнейм</label>
+                        <input type="text" id="regNickname" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="regEmail" class="form-label">Email</label>
+                        <input type="email" id="regEmail" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="regPassword" class="form-label">Пароль</label>
+                        <input type="password" id="regPassword" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="regTelegram" class="form-label">Телеграм (@username)</label>
+                        <input type="text" id="regTelegram" class="form-input" required>
+                    </div>
+                    <button type="submit" class="btn">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="profileModal">
+      <div class="modal-content">
+        <span class="close-modal" id="closeProfileModal">&times;</span>
+        <div id="profileContent">
+          <!-- Сюда JS будет вставлять содержимое профиля -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/reviews.js"></script>
+</body>
+</html>
